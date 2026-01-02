@@ -1,0 +1,22 @@
+
+  <script>
+    const quotes = [
+      { text: "Believe in yourself and all that you are.", author: "Unknown" },
+      { text: "Work hard, stay humble.", author: "Unknown" },
+      { text: "Dream big, start small.", author: "Unknown" },
+      { text: "Don’t watch the clock; do what it does. Keep going.", author: "Sam Levenson" },
+      { text: "Your limitation—it’s only your imagination.", author: "Anonymous" },
+      { text: "Great things never come from comfort zones.", author: "Unknown" },
+      { text: "Push yourself, because no one else is going to do it for you.", author: "Unknown" },
+      { text: "Success doesn’t just find you. You have to go out and get it.", author: "Unknown" },
+      { text: "Little things make big days.", author: "Unknown" }
+    ];
+
+    function newQuote() {
+      const random = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quoteText").textContent = "“" + quotes[random].text + "”";
+      document.getElementById("quoteAuthor").textContent = "— " + quotes[random].author;
+    }
+  </script>
+</body>
+</html>
